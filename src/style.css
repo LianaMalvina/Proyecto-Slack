@@ -1,0 +1,46 @@
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #400b41;
+}
+
+.div{
+    display: flex;
+    flex-direction: row;
+  margin-top: 3px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.lateral-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#400b41;
+    width: 70px;
+}
+
+.centro{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+.canales-app{
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    background-color: #744676;
+    border-radius: 10px;
+      
+}
+.chat-principal{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: aliceblue;
+    color: black;
+    width: 940px;
+}

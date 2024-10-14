@@ -1,0 +1,103 @@
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', sans-serif;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: #400b41;
+    justify-content:space-between;
+    justify-content: center;
+    height: 40px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    gap:20px;
+    align-content: center;
+    margin-top: 5px;
+}
+.arrows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    gap:10px;
+}
+.arrow, .clock{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    color:antiquewhite;
+    font-size: 20px;
+    margin-top: 6px;
+    background-color: #400b41;
+}
+.buscador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
+    gap:90px;
+    width: 613.5px;
+}
+.buscador-icon{
+    border:none;
+    background-color: #744676;
+    color:antiquewhite;
+    font-size: 20px;
+    width: 600px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    ;
+}
+input{
+    border:none;
+    background-color: #744676;
+    color:white;
+    font-size: 15px;
+    width: 600px;
+    border-radius: 8px;
+    align-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+.interno-buscador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 20px;
+    background-color: #744676;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    color: antiquewhite;
+}
+.pregunta-icon{
+    margin-top:3px;
+    color: antiquewhite;
+    font-size: 25px;
+    border: none;
+    background-color: #400b41;
+}
+.vacio-uno{
+    width: 260px;
+}
+.vacio-dos{
+    width: 270px;
+}

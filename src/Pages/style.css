@@ -1,0 +1,9 @@
+.contenedor-init{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo{
+    margin-top: 10px;
+}
