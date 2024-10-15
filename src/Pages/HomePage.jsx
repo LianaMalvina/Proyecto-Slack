@@ -5,7 +5,7 @@ import { Lateral } from '../Componentes/BarraIzquierda/Lateral'
 import { lateral_izq } from '../Componentes/BarraIzquierda/lateralizquierda'
 import Canales from '../Componentes/Canales/Canales'
 import { canales_data } from '../Componentes/Canales/data_canales'
-import Chat from '../Componentes/ChatPrincipal/Chat'
+import ChatList from '../Componentes/ChatPrincipal/ChatList'
 import { chats } from '../Componentes/ChatPrincipal/chat_data'
 
 
@@ -23,7 +23,7 @@ const HomePage = () => {
         <Canales canales_data={canales_data}/>
           </div>
           <div className='chat-principal'>
-            <Chat chats={chats} />
+            <ChatList chats={chats} />
           </div>
 
        

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './enviarmsj.css'
 import { MdFoggy, MdFormatListNumbered } from "react-icons/md";
 import { FiList, FiAlignLeft } from "react-icons/fi";
@@ -13,6 +13,17 @@ import { RxFontItalic } from "react-icons/rx";
 
 const EnviarMensaje = () => {      
     
+    const [error, setError ]= useState(null)
+    const handleSubmitMessage = (evento) =>{
+        evento.preventDefault()
+        
+        const formulario = new FormData(evento.target)
+        const mensaje = formulario.get('mensaje')
+        if(!mensaje){
+            setError('No has escrito nada')
+        }
+
+    }
     
         return(
             <>
@@ -25,9 +36,9 @@ const EnviarMensaje = () => {
                         <button className='botones-msj-nav'><RxFontItalic/></button>
                     </div>
                     <div className='iconos-nav-msj'>
-                    <button className='botones-msj-nav'><LuUnderline/></button>
-                </div>
-                <div className='iconos-nav-msj'>
+                       <button className='botones-msj-nav'><LuUnderline/></button>
+                    </div>
+                    <div className='iconos-nav-msj'>
                         <button className='botones-msj-nav'><GiBreakingChain/></button>
                     </div>
                     <div className='iconos-nav-msj'>
@@ -45,7 +56,13 @@ const EnviarMensaje = () => {
                     <div className='iconos-nav-msj'>
                         <button className='botones-msj-nav'><PiCodeBlock/></button>
                     </div>
+                    
                 </div>
+                <form onSubmit={handleSubmitMessage}>
+          <input placeholder='Escriba su mensaje aqui...' name='mensaje'/>
+          {error &&<span>{error}</span>}
+          <button>Enviar</button>
+        </form>
             </div>
             </>
         )
