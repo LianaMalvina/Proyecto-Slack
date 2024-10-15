@@ -1,0 +1,38 @@
+/*export const enviar_mensaje =[
+    {
+        iconico: 'B',
+        id:1,
+    },
+    {
+        iconico:'I',
+        id:2,
+    },
+    {
+        iconico:'S',
+        id:3,
+    },
+    {
+        iconico:'CADENA',
+        id:4,
+    },
+    {
+        iconico:'NUMBER',
+        id:5,
+    },
+    {
+        iconico:'PUNTOS',
+        id:6,
+    },
+    {
+        iconico:'PARRAFO',
+        id:7,
+    },
+    {
+        iconico:'COSO',
+        id:8,
+    },
+    {
+        iconico:'OTRO-COSO',
+        id:9
+    },
+]*/

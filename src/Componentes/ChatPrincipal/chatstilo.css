@@ -1,0 +1,4 @@
+.enviar-mensaje{
+    display: flex;
+    flex-direction: row;
+}

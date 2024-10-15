@@ -1,35 +1,40 @@
 import React from 'react'
+import EnviarMensaje from './EnviarMensaje/EnviarMensaje'
+
 
 
 
 const Chat = (props) => {
-    const ChatJSX = props.chats.map((chat)=>
-{
-    return(
-        <div>
+  const ChatJSX = props.chats.map((chat) => {
+    return (
+      <div key={chat.id}>
         <div classNamen='primer-titulo'>
-        <h2>{chat.titulo}</h2>
-        <img src='' alt=''/>
-        <span>{chat.cantidad}</span>
-        <span></span>
+          <h2>{chat.titulo}</h2>
+          <img src='' alt='' />
+          <span>{chat.cantidad}</span>
+          <span></span>
         </div>
         <div className='segundo-titulo'>
-        <button>{chat.titulo1}</button><button>{chat.titulo2}</button><button>{chat.titulo3}</button>
+          <button>{chat.titulo1}</button><button>{chat.titulo2}</button><button>{chat.titulo3}</button>
         </div>
         <div className='chat'>
-        <span>{chat.fecha}</span><h3>{chat.nombre}</h3><p>{chat.mensaje}</p>
+          <span>{chat.fecha}</span><h3>{chat.nombre}</h3><p>{chat.mensaje}</p>
         </div>
-
-        </div>
+      </div>
     )
-})
+  })
 
-        
-    
+
+
   return (
+  <>
     <div>
       {ChatJSX}
     </div>
+        <div className='enviar-mensaje'>
+       <EnviarMensaje/>
+        </div>
+        </>
   )
 }
 
