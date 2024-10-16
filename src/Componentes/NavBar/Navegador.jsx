@@ -26,7 +26,7 @@ const Navegador = () => {
 
             <a href='#' className='buscador'>
                 <button className='buscador-icon'>
-                    <input type='text' placeholder='Buscar en UTN PWI TM LUN Y MIE' className='buscador_text' />
+                    <input className='input-navbar' type='text' placeholder='Buscar en UTN PWI TM LUN Y MIE'/>
                     <span className='interno-buscador'><IoSearch /></span>
                 </button>
             </a>

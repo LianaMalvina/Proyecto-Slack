@@ -7,6 +7,7 @@ import Canales from '../Componentes/Canales/Canales'
 import { canales_data } from '../Componentes/Canales/data_canales'
 import ChatList from '../Componentes/ChatPrincipal/ChatList'
 import { chats } from '../Componentes/ChatPrincipal/chat_data'
+import { IconosDerechos } from '../Componentes/ChatPrincipal/EnviarMensaje/titulochats'
 
 
 const HomePage = () => {
@@ -22,9 +23,14 @@ const HomePage = () => {
           <div className='canales-app'>
         <Canales canales_data={canales_data}/>
           </div>
-          <div className='chat-principal'>
-            <ChatList chats={chats} />
-          </div>
+
+        <div className='chat-principal'>
+
+            <div className='chat-ppal'>
+            <IconosDerechos className=''/>
+           </div>
+          <ChatList chats={chats} />
+        </div>
 
        
         </div>

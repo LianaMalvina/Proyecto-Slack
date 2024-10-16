@@ -44,3 +44,7 @@
     color: black;
     width: 940px;
 }
+.chat-ppal{
+    display: flex;
+    flex-direction: row;
+}
