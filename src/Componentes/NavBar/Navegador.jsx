@@ -11,7 +11,7 @@ const Navegador = () => {
     const navigate = useNavigate();
 
   const goToInicio = () => {
-    navigate('/inicio')}
+    navigate('/')}
 
   return (
     <div>

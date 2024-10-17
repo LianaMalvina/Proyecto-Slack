@@ -41,7 +41,7 @@ const Main = () => {
                             </div>
 
                             <div>
-                                <Link to={'/inicio/home'}><button className='iniciar-slack'>INICIAR SLACK</button></Link>
+                                <Link to={'/random'}><button className='iniciar-slack'>INICIAR SLACK</button></Link>
                             </div>
                         </div>
                     </div>

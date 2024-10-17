@@ -74,3 +74,20 @@ li{
     border-top: solid 1px rgb(219, 216, 216);
     background-color: white;
 }
+.chat-li{
+    font-size: 14px;
+    font-weight: 100;
+    display: flex;}
+
+.img-chatitem{
+    width: 45px;
+    border-radius: 12px;
+
+}  
+  
+.toyrepodrida{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+ 
+}
