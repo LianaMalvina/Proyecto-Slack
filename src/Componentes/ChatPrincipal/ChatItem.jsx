@@ -10,7 +10,7 @@ const ChatItem = (props) => {
           <img src={props.image} className='img-chatitem' alt="Chat image"/>
         )}</span>
         <div className='toyrepodrida'>
-          <span>{props.nombre}</span>
+          <span className='props-nombre'>{props.nombre}</span>
           <p>{props.mensaje}</p>
         </div>
     </div></div>

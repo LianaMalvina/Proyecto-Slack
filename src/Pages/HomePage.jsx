@@ -4,7 +4,7 @@ import Navegador from '../Componentes/NavBar/Navegador'
 import { Lateral } from '../Componentes/BarraIzquierda/Lateral'
 import { lateral_izq } from '../Componentes/BarraIzquierda/lateralizquierda'
 import Canales from '../Componentes/Canales/Canales'
-import { canales_data } from '../Componentes/Canales/data_canales'
+import { canales_data_inicial } from '../Componentes/Canales/data_canales'
 import ChatList from '../Componentes/ChatPrincipal/ChatList'
 import { chats } from '../Componentes/ChatPrincipal/chat_data'
 import { IconosDerechos } from '../Componentes/ChatPrincipal/EnviarMensaje/titulochats'
@@ -21,7 +21,7 @@ const HomePage = () => {
 
         <div className='centro'>
           <div className='canales-app'>
-        <Canales canales_data={canales_data}/>
+        <Canales canales_data={canales_data_inicial}/>
           </div>
 
         <div className='chat-principal'>

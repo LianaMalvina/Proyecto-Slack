@@ -51,7 +51,7 @@ const Main = () => {
                         <div className='equipo'>
                             <img src='https://a.slack-edge.com/613463e/marketing/img/homepage/bold-existing-users/create-new-workspace-module/woman-with-laptop-color-background.png'></img>
                             <h3 className='equipo-h3'>¿Quieres usar Slack con otro equipo?</h3></div>
-                        <button className='espacio-boton'>CREAR UN NUEVO ESPACIO DE TRABAJO</button>
+                       <Link to={'/new'}><button className='espacio-boton'>CREAR UN NUEVO ESPACIO DE TRABAJO</button></Link> 
                     </div>
 
                     <div className='espacio-out'>
