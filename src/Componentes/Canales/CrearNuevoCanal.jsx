@@ -1,7 +1,10 @@
 import React from 'react';
 import { crearNuevosCanales } from './data_canales';
+import { useNavigate } from 'react-router-dom';
 
 const CrearNuevoCanal = () => {
+
+    const navigation = useNavigate()
     const handleSubmit = (evento) => {
         evento.preventDefault()
 
@@ -13,10 +16,12 @@ const CrearNuevoCanal = () => {
         if (nuevoespacio) {
             const espacio = {
                 titulo: nuevoespacio,
+                canal: canalnuevo,
              
             }
             crearNuevosCanales(espacio)
-        }
+          
+        }  navigation('/inicio/home')
     };
 
     return (
