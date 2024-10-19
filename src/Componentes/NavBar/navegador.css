@@ -1,78 +1,98 @@
-:root{
+:root {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Lucida Sans', sans-serif;
+    font-family: 'Lucida Sans', sans-serif;
 }
 
-.header{
+/* Asegúrate de que el body no tenga márgenes */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
     display: flex;
     flex-direction: row;
     background-color: #400b41;
-    justify-content:space-between;
     justify-content: center;
     height: 40px;
+    width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
 }
-.navbar{
+
+/* Navbar */
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 40px;
-    gap:20px;
+    gap: 20px;
     align-content: center;
     margin-top: 5px;
+    width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
+    padding: 0; /* Asegúrate de que no haya padding */
 }
-.arrows{
+
+/* Arrows */
+.arrows {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 40px;
-    gap:10px;
+    gap: 10px;
 }
-.arrow, .clock{
+
+/* Arrow and Clock */
+.arrow, .clock {
     display: flex;
     flex-direction: row;
     border: none;
-    color:antiquewhite;
+    color: antiquewhite;
     font-size: 20px;
     margin-top: 6px;
     background-color: #400b41;
 }
-.buscador{
+
+/* Buscador */
+.buscador {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 30px;
-    gap:90px;
-    width: 613.5px;
+    gap: 10px; /* Reduce el gap para evitar superposición */
+    width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
 }
-.buscador-icon{
-    border:none;
+
+/* Buscador Icon */
+.buscador-icon {
+    border: none;
     background-color: #744676;
     font-size: 20px;
-    width: 600px;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    color: #ffff
-    ;
+    color: #fff;
+    width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
 }
-.input-navbar{
-    border:none;
+
+/* Input Navbar */
+.input-navbar {
+    border: none;
     background-color: #744676;
-    color:white;
+    color: white;
     font-size: 15px;
-    width: 600px;
     border-radius: 8px;
-    align-content: center;
-    align-items: center;
-  height: 10px;
+    height: 30px; /* Ajusta la altura */
     cursor: pointer;
+    width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
 }
-.interno-buscador{
+
+/* Interno Buscador */
+.interno-buscador {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -84,18 +104,23 @@
     border-radius: 8px;
     cursor: pointer;
     border: none;
-    color: #ffff;
+    color: #fff;
 }
-.pregunta-icon{
-    margin-top:3px;
+
+/* Pregunta Icon */
+.pregunta-icon {
+    margin-top: 3px;
     color: antiquewhite;
     font-size: 25px;
     border: none;
     background-color: #400b41;
 }
-.vacio-uno{
+
+/* Vacíos */
+.vacio-uno {
     width: 260px;
 }
-.vacio-dos{
+
+.vacio-dos {
     width: 270px;
 }

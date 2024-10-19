@@ -44,3 +44,68 @@ flex-direction: row;
      padding-top: 10px;
  }
  
+ .nav-menu {
+    position: relative;
+}
+
+.menu-toggle {
+    display: none; /* Ocultamos el botón por defecto */
+    font-size: 16px;
+    background: #400b41; /* Color de fondo */
+    color: antiquewhite; /* Color del texto */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-list {
+    display: flex; /* Muestra la lista en línea en pantallas grandes */
+    flex-direction: row; /* Elementos en fila */
+}
+
+.menu-list li {
+    margin-right: 20px; /* Espaciado entre botones */
+}
+
+@media (max-width: 320px) {
+    
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column; /* Alinea los elementos en columna */
+        align-items: flex-end; /* Alinea al margen izquierdo */
+        padding: 10px; /* Espaciado alrededor del menú */
+        position: relative; /* Para posicionar el menú desplegable */}
+
+
+    .menu-toggle {
+        display: block; /* Muestra el botón en pantallas pequeñas */
+    }
+    
+    .menu-list {
+        display: none; /* Oculta la lista por defecto en pantallas pequeñas */
+        flex-direction: column; /* Cambia a columna al mostrar */
+        position: absolute; /* Asegúrate de que la lista se superponga al contenido */
+        background: white; /* Color de fondo para la lista */
+        width: 100%; /* Ancho completo */
+        border: 1px solid #ccc; /* Borde */
+        z-index: 1000; /* Asegura que esté por encima de otros elementos */
+        justify-content: end;
+    }
+
+    .menu-list.show {
+        display: flex; /* Muestra la lista cuando está activa */
+    }
+
+    .menu-list li {
+        margin-right: 0; /* Sin espaciado horizontal en la lista desplegada */
+        padding: 10px; /* Espacio interno */
+        text-align: center; /* Centra el texto */
+        justify-content: end;
+        align-items: end;
+    }
+
+    .botones-ventas {
+        visibility: hidden;
+    }
+}

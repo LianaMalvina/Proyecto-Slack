@@ -258,3 +258,67 @@ h1{
     justify-content: space-around;
     width: 300px;
 }
+
+
+@media (max-width: 320px) {
+    .main {
+        flex-direction: column; /* Cambia a columna para mejor visualización */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .contenedor {
+        gap: 20px; /* Reduce el espacio entre elementos */
+    }
+
+    .titulo {
+        width: 100%; /* Ancho completo */
+        text-align: center; /* Centra el texto */
+    }
+
+    h1 {
+        font-size: 20px; /* Tamaño de fuente reducido */
+        height: auto; /* Altura automática */
+    }
+
+    .espacios-trabajo,
+    .tu-email,
+    .iconos-works,
+    .slack-equipo,
+    .windows,
+    .shadow {
+        width: 95%; /* Ancho más pequeño para pantallas estrechas */
+    }
+
+    .espacios-trabajo {
+        margin-top: -20px; /* Ajusta el margen */
+    }
+
+    .iniciar-slack {
+        width: 100%; /* Ancho completo */
+        padding: 10px; /* Espaciado reducido */
+        font-size: 14px; /* Tamaño de fuente reducido */
+    }
+
+    .slack-work {
+        height: 40px; /* Tamaño reducido */
+        width: 40px; /* Tamaño reducido */
+    }
+
+    .cantidad {
+        font-size: 12px; /* Tamaño de fuente reducido */
+    }
+
+    .pie-main {
+        flex-direction: column; /* Cambia a columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .pie-main-iconos {
+        font-size: 14px; /* Tamaño de fuente reducido */
+    }
+
+    .redes {
+        flex-direction: column; /* Cambia a columna para mejor visualización */
+        width: 100%; /* Ancho completo */
+    }
+}

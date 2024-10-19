@@ -11,7 +11,8 @@ const InitPage = () => {
     <div className='logo'>
       <NavbarLogo/>
     </div>
-    <PaginaInicio/>
+    <div><PaginaInicio/></div>
+    
     </nav>
     <main>
       <Main/>

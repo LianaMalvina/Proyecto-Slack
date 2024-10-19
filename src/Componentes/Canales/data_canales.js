@@ -1,19 +1,36 @@
 import { v4 as uuidv4 } from 'uuid';
+import { useEffect } from 'react';
 
 export const canales_data_inicial = [
-  
     {
         titulo: 'Canales',
         id: 5,
         icon: ['PLAYDOWN'],
         canales: [
-            { name: 'consultas', id: 1 },
-            { name: 'general', id: 2 },
-            { name: 'utilidades', id: 3 },
-            { name: 'tareas-entregas', id: 4 },
+            {
+                name: 'consultas',
+                id: 1,
+                mensajes: [
+                    { fecha: '2024-01-01', image: 'image_url', nombre: 'Usuario', texto: 'Hola' },
+                ]
+            },
+            {
+                name: 'general',
+                id: 2,
+                mensajes: [ { fecha: '2024-01-01', image: 'image_url', nombre: 'Usuario', texto: 'Hola' },]
+            },
+            {
+                name: 'utilidades',
+                id: 3,
+                mensajes: [ { fecha: '2024-01-01', image: 'image_url', nombre: 'Usuario', texto: 'Hola' },]
+            },
+            {
+                name: 'tareas-entregas',
+                id: 4,
+                mensajes: [ { fecha: '2024-01-01', image: 'image_url', nombre: 'Usuario', texto: 'Hola' },]
+            },
         ],
     },
- 
 ];
 
 const obtenerNuevoCanal = () => {
