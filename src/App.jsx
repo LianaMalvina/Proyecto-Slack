@@ -17,12 +17,12 @@ function App() {
     <Routes>
       <Route path='/' element={<InitPage/>}/>
       <Route path='/inicio/home' element={<HomePage/>}/>
+      <Route path='/home' element={<HomePage/>}/>
       <Route path='/random' element={<Random/>}/>
       <Route path='/new' element={<CrearNuevoCanal/>}/>
       <Route path='/inicio/new' element={<CrearNuevoCanal/>}/>
       <Route path="/canales" element={<Canales/>} />
-     {/* <Route path="/chat/:canalId" element={<ChatItem/>} />
-      <Route path='/inicio/home/chat/:canalId' element={<ChatList />} />*/}
+      <Route path="/new/home" element={<HomePage/>}/>  
     </Routes>
       
     </>

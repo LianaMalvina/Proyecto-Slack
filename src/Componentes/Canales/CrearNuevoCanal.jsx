@@ -25,7 +25,7 @@ const CrearNuevoCanal = () => {
             }
 
             crearNuevosCanales(espacio)
-            navigation('/inicio/home')
+            navigation('/home')
         }
     }
 
@@ -57,9 +57,9 @@ const CrearNuevoCanal = () => {
                             Para crear un nuevo espacio de trabajo, completa tus datos aquí debajo.</p>
 
                         <form onSubmit={handleSubmit} className='formulario-crear-canal'>
-                            <label htmlFor='crear-espacio-name'>Nombre del Espacio</label>
-                            <input placeholder='Escribí aquí el nombre de tu espacio' name='nombre-espacio' id='crear-espacio-name' required />
-                            <label htmlFor='crear-canal-name'>Nombre del Canal</label>
+                            <label className='name-esp' htmlFor='crear-espacio-name'>Nombre del Canal</label>
+                            <input placeholder='Escribí aquí el nombre de tu canal' name='nombre-espacio' id='crear-espacio-name' required />
+                            <label className='name-esp' htmlFor='crear-canal-name'>Confirma</label>
                             <input
                                 placeholder='Escribí aquí el nombre de tu canal'
                                 name='nombre_canal'
@@ -74,15 +74,19 @@ const CrearNuevoCanal = () => {
                                 nombre_canal.length > 0 && <span style={{ color: 'green' }}>Nombre disponible</span>
                             )}
                             {<button type='submit' className='crear' disabled={errorCrearcanalRepeated || nombre_canal.length === 0}>
-                            </button>}
+                                Crear canal</button>}
+
                         </form>
-                        <button>Crear canal</button>
+
                         <p className='p-crear-nuevo'>Quiero recibir comunicaciones de marketing sobre Salesforce, inclusive sobre Slack.</p>
                         <p className='p-crear-nuevos'>Al continuar, aceptas el Acuerdo de servicios principal, los Términos de servicio del usuario
                             y los Términos complementarios de Slack.</p></div>
-                    <div>
-                        <img className='imagen-crer-canal' src='./imagenes/equipo.png' alt='' /></div></div>
-            </div></div>
+                    <div className='imagen-crear-canal-dos'>
+                        <img  src='./imagenes/equipo.png' alt='' />
+                    </div>
+                </div>
+            </div>
+        </div>
     )
 }
 
