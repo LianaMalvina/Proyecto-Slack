@@ -7,6 +7,7 @@
 .contenedor-canales{
     display: flex;
     flex-direction: column;
+    
 
 }
 .canales-hashtag{

@@ -3,25 +3,28 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', sans-serif;
+    background-color: #400b41;
 }
 
-/* Asegúrate de que el body no tenga márgenes */
+
 body {
     margin: 0;
     padding: 0;
+    background-color: #400b41;
 }
 
-/* Header */
+
 .header {
     display: flex;
     flex-direction: row;
     background-color: #400b41;
     justify-content: center;
     height: 40px;
-    width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
+    width: 100%; 
+    margin-top: 10px;
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -30,11 +33,11 @@ body {
     gap: 20px;
     align-content: center;
     margin-top: 5px;
-    width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
-    padding: 0; /* Asegúrate de que no haya padding */
+    width: 100%; 
+    padding: 0;
 }
 
-/* Arrows */
+
 .arrows {
     display: flex;
     flex-direction: row;
@@ -43,7 +46,7 @@ body {
     gap: 10px;
 }
 
-/* Arrow and Clock */
+
 .arrow, .clock {
     display: flex;
     flex-direction: row;

@@ -3,16 +3,20 @@
     flex-direction: row;
     justify-content: space-around;
     gap: 50px;
+    background-color: #400b41;
+
 }
 
-button{
+.btn-navegador-inicio{
     background-color: #400b41;
-    color:antiquewhite;
-     font-size: 14px;
+    color:#ffff;
+     font-size: 16px;
     border: none;
 text-decoration: none;
 display: flex;
 flex-direction: row;
+font-weight: 700;
+border-top: none;
  }
 
  span{
@@ -22,6 +26,7 @@ flex-direction: row;
  li{
     display: flex;
     flex-direction: row;
+    border: none;
  }
  ul{
     display: flex;
@@ -36,12 +41,21 @@ flex-direction: row;
     gap: 20px;
     flex-direction: row;
     justify-content: end;
+    align-content: center;
    
  }
- .ventas{
-     border: 1px solid antiquewhite;
-     border-radius: 2px;
-     padding-top: 10px;
+ .ventas, .ventas-dos{
+     border: 1px solid #ffff;
+     border-radius: 4px;
+    color: #ffff;
+     font-weight: 700;
+     align-content: center;
+     background-color: #400b41;
+ }
+ .ventas-dos{
+    background-color: #ffff;
+    color: #400b41;
+
  }
  
  .nav-menu {

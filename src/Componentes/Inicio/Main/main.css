@@ -13,6 +13,8 @@
     align-content: center;
     align-items: center;
     width: 100%;
+    padding: 0%;
+    margin: 0%;
 }
 .contenedor{
     display: flex;
@@ -107,6 +109,7 @@ h1{
     padding-left: 20px;
     padding-right: 20px;
     cursor: pointer;
+    color: #ffff;
 }
 .slack-equipo{
     display: flex;
@@ -118,6 +121,8 @@ h1{
     border: solid 4px #6e436e;
     height: 100px;
 }
+
+
 .espacio-boton{
     border: solid 1px #611f69;
     background-color: #ffff;
@@ -259,66 +264,171 @@ h1{
     width: 300px;
 }
 
-
 @media (max-width: 320px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
     .main {
-        flex-direction: column; /* Cambia a columna para mejor visualización */
-        align-items: center; /* Centra los elementos */
+        flex-direction: column; 
+        align-items: center; 
+        width: 100vw; /* Cambiado a 100vw */
+        padding: 0; /* Asegura que no haya padding */
+        margin: 0; /* Asegura que no haya margin */
     }
 
     .contenedor {
-        gap: 20px; /* Reduce el espacio entre elementos */
+        gap: 20px;  
+        padding: 0; /* Asegura que no haya padding */
+        margin: 0; /* Asegura que no haya margin */
     }
 
     .titulo {
-        width: 100%; /* Ancho completo */
-        text-align: center; /* Centra el texto */
+        width: 100%; 
+        text-align: center; 
     }
 
     h1 {
-        font-size: 20px; /* Tamaño de fuente reducido */
-        height: auto; /* Altura automática */
-    }
-
-    .espacios-trabajo,
-    .tu-email,
-    .iconos-works,
-    .slack-equipo,
-    .windows,
-    .shadow {
-        width: 95%; /* Ancho más pequeño para pantallas estrechas */
+        font-size: 20px; 
+        height: auto; 
+        text-align: center;
     }
 
     .espacios-trabajo {
-        margin-top: -20px; /* Ajusta el margen */
+        width: 80%; 
+        margin-top: -20px; 
+        font-size: 12px;
     }
 
+    .nombre-canal {
+        font-size: 12px;
+    }
+
+    .tu-email,
+    .iconos-works,
     .iniciar-slack {
-        width: 100%; /* Ancho completo */
-        padding: 10px; /* Espaciado reducido */
-        font-size: 14px; /* Tamaño de fuente reducido */
+        width: 100%; 
+        font-size: 12px; 
+        padding: 0; /* Asegura que no haya padding */
+        margin: 0; /* Asegura que no haya margin */
     }
 
     .slack-work {
-        height: 40px; /* Tamaño reducido */
-        width: 40px; /* Tamaño reducido */
+        height: 10px; 
+        width: 10px; 
     }
 
     .cantidad {
-        font-size: 12px; /* Tamaño de fuente reducido */
+        font-size: 12px; 
+    }
+
+    .espacio-out {
+        width: 80%;
+        font-size: 10px;
     }
 
     .pie-main {
-        flex-direction: column; /* Cambia a columna */
-        align-items: center; /* Centra los elementos */
+        flex-direction: row; 
+        align-items: center;
+        text-align: center;
+        padding: 0; /* Asegura que no haya padding */
     }
 
     .pie-main-iconos {
-        font-size: 14px; /* Tamaño de fuente reducido */
+        font-size: 14px; 
+        padding: 0; /* Asegura que no haya padding */
     }
 
     .redes {
-        flex-direction: column; /* Cambia a columna para mejor visualización */
-        width: 100%; /* Ancho completo */
+        flex-direction: row; 
+        width: 95%; 
+        padding: 0; /* Asegura que no haya padding */
+    }
+
+    .slack-equipo, .equipo {
+        width: 80%;
+        justify-content: center;
+        position: relative;
+    }
+
+    .equipo-h3 {
+        visibility: hidden;
+    }
+
+    .espacio-boton {
+        width: 40%;
+        font-size: 10px;
+        position: absolute;
+        right: 1px;
+    }
+
+    .windows, .wind {
+        width: 80%;
+        font-size: 10px;
+    }
+
+    .cloud {
+        font-size: 30px;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .text-window {
+        font-weight: 100;
+        font-size: 10px;
+    }
+
+    .pepe {
+        margin: 0;
+        width: 120%;
+    }
+
+    .arrowd {
+        margin-left: 30px;
+        margin-right: 0;
+    }
+
+    .segunda-vista {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: -40px;
+    }
+
+    .contenedor-ultimo, .shadow, .ultimo-cuadro {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-ultimo {
+        margin-left: 15px;
+    }
+
+    .agiliza {
+        margin-top: 0;
+    }
+
+    .celeste {
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .ultimo-contenedor, .flecha {
+        font-size: 10px;
+    }
+
+    .cont {
+        width: 90%;
+        font-size: 10px;
+    }
+
+    .flecha {
+        margin-bottom: 10px;
     }
 }

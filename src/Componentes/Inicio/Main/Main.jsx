@@ -67,7 +67,7 @@ const Main = () => {
                             <a src=''><IoIosCloudDownload className='cloud' /></a>
                             <div className='text-window'>
                                 <h3>Slack para Windows</h3>
-                                <p>Inicia Slack desde la bandeja para no perderte ninguna notificación
+                                <p className='pepe'> Inicia Slack desde la bandeja para no perderte ninguna notificación
                                     en la computadora</p>
                             </div>
                         </div>
@@ -84,10 +84,10 @@ const Main = () => {
                 <div className='contenedor-ultimo'>
                     <div className='shadow'>
                         <div className='ultimo-cuadro'>
-                            <img src='https://a.slack-edge.com/4ebba/marketing/img/homepage/bold-existing-users/promos-trial-or-has-paid-plan/slack-connect-illustration.png'></img>
+                            <img className='celeste' src='https://a.slack-edge.com/4ebba/marketing/img/homepage/bold-existing-users/promos-trial-or-has-paid-plan/slack-connect-illustration.png'></img>
                             <div className='ultimo-contenedor'>
                                 <h5>Slack Connect</h5>
-                                <h2>Agiliza el trabajo con socios externos mediante Slack Connect</h2>
+                                <h2 className='agiliza'>Agiliza el trabajo con socios externos mediante Slack Connect</h2>
                                 <p>Invita a un socio a colaborar contigo en Slack y le regalaremos tres meses de un plan prémium.*</p>
                                 <span className='flecha'>Invitar a un socio<span></span><FaArrowRight className='flecha' /></span>
                             </div>

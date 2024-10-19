@@ -7,6 +7,7 @@ import Main from '../Componentes/Inicio/Main/Main'
 const InitPage = () => {
   return (
     <>
+    <section>
     <nav className='contenedor-init'>
     <div className='logo'>
       <NavbarLogo/>
@@ -17,6 +18,7 @@ const InitPage = () => {
     <main>
       <Main/>
     </main>
+    </section>
     </>
   )
 }
