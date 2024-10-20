@@ -22,9 +22,9 @@ const HomePage = () => {
           image: '', 
           nombre: 'Usuario', 
           mensaje: mensaje, 
-      };
-      setChats([...chats, nuevoChat]); 
-  };
+      }
+      setChats([...chats, nuevoChat])
+  }
   return (
     <>
       <Navegador className="navegador-home-page"/>
@@ -48,7 +48,7 @@ const HomePage = () => {
           <div className='chat-principal'>
 
             <div className='chat-ppal'>
-              <IconosDerechos className='' />
+              <IconosDerechos />
             </div>
             <ChatList chats={chats} agregarMensaje={agregarMensaje}/>
              

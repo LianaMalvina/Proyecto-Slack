@@ -143,6 +143,12 @@ h2{
 }
 
 @media (max-width: 320px) {
+    
+    
+    .contenedor-chat{
+        padding: 0;
+        margin: 0;
+    }
     .primer-contact-titulo{
         font-size: 10px;
     } .titulo-consultas{
@@ -151,6 +157,8 @@ h2{
     .image-contact{
 width: 14px;
     }
-}.mensaje-chat-stilo{
+.mensaje-chat-stilo{
     font-size: 12px;
+}
+
 }

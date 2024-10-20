@@ -10,9 +10,9 @@ import { IoIosCloudDownload } from "react-icons/io";
 import { Link } from 'react-router-dom';
 
 const Main = () => {
-    alert('Este proyecto es de Liana Kachuk- DNI: 29.371.485')
+    
     return (
-        <main classname='main'>
+        <main className='main'>
             <section className='primer-vista'>
                 <div className='contenedor'>
                     <div className='titulo'>

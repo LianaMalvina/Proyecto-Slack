@@ -28,7 +28,7 @@ const EnviarMensaje = ({ agregarMensaje}) => {
             setMensaje('')
             setError({ text: '', isError: false })
         }
-    };
+    }
 
     return (
         <>
