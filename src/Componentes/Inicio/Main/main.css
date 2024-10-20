@@ -284,15 +284,15 @@ h1{
     .main {
         flex-direction: column; 
         align-items: center; 
-        width: 100vw; /* Cambiado a 100vw */
-        padding: 0; /* Asegura que no haya padding */
-        margin: 0; /* Asegura que no haya margin */
+        width: 100vw; 
+        padding: 0; 
+        margin: 0; 
     }
 
     .contenedor {
         gap: 20px;  
-        padding: 0; /* Asegura que no haya padding */
-        margin: 0; /* Asegura que no haya margin */
+        padding: 0; 
+        margin: 0; 
     }
 
     .titulo {
@@ -352,18 +352,18 @@ h1{
         flex-direction: row; 
         align-items: center;
         text-align: center;
-        padding: 0; /* Asegura que no haya padding */
+        padding: 0; 
     }
 
     .pie-main-iconos {
         font-size: 14px; 
-        padding: 0; /* Asegura que no haya padding */
+        padding: 0; 
     }
 
     .redes {
         flex-direction: row; 
         width: 95%; 
-        padding: 0; /* Asegura que no haya padding */
+        padding: 0; 
     }
 
     .slack-equipo, .equipo {

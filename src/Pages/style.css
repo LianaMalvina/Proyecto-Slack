@@ -22,10 +22,9 @@
     @media (max-width: 320px) {
         .centro {
             display: flex;
-            flex-direction: column; /* Cambia a columna para mejor disposición */
+            flex-direction: column; 
             align-items: center; 
-            padding: 10px;
-        }
+            }
     
         .canales-app {
             width: 60%; 
@@ -33,8 +32,8 @@
         }
     
         .chat-principal {
-            width: 60%; /* Ancho completo en pantallas pequeñas */
-            margin-top: 10px; /* Espacio entre secciones */
+            width: 60%; 
+            margin-top: 10px; 
         }
     
         .chat-ppal {
@@ -45,10 +44,9 @@
     
         
         .chat-list {
-            width: 60%; /* Asegúrate de que la lista de chat use el ancho completo */
-            overflow-y: auto; /* Permite el desplazamiento si hay mucho contenido */
+            width: 60%; 
+            overflow-y: auto; 
         }
-    
         
         .iconos-derechos {
             font-size: 24px; 

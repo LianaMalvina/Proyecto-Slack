@@ -15,18 +15,18 @@ import { IoVideocamOutline } from "react-icons/io5";
 import ChatItem from '../ChatItem';
 
 const EnviarMensaje = ({ agregarMensaje}) => {
-    const [error, setError] = useState({ text: '', isError: false });
-    const [mensaje, setMensaje] = useState('');
+    const [error, setError] = useState({ text: '', isError: false })
+    const [mensaje, setMensaje] = useState('')
 
     const handleSubmitMessage = (evento) => {
-        evento.preventDefault();
+        evento.preventDefault()
 
         if (!mensaje) {
-            setError({ isError: true, text: 'No has escrito nada' });
+            setError({ isError: true, text: 'No has escrito nada' })
         } else {
-            agregarMensaje(mensaje); // Llama a la función para agregar el mensaje
-            setMensaje(''); // Limpia el campo de entrada
-            setError({ text: '', isError: false });
+            agregarMensaje(mensaje)
+            setMensaje('')
+            setError({ text: '', isError: false })
         }
     };
 

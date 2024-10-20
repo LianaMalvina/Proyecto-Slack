@@ -76,54 +76,54 @@
     margin-left: 420px;
 }
 
-/* Media Query para pantallas de 320px */
+
 @media (max-width: 320px) {
     .cargando{
         display: none;
     }
     .contenedor-padre {
-        padding: 10px; /* Añade un poco de padding */
+        padding: 10px;
     }
 
     .contenedor-random {
-        width: 90%; /* Aumenta el ancho para pantallas pequeñas */
-        margin-left: 5%; /* Ajusta el margen izquierdo */
+        width: 90%; 
+        margin-left: 5%; 
     }
 
     .imagen-random {
-        height: 30px; /* Tamaño reducido de la imagen */
-        margin-left: auto; /* Centra la imagen */
-        margin-right: auto; /* Centra la imagen */
-        margin-top: 30px; /* Reduce el margen superior */
+        height: 30px; 
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 30px; 
     }
 
     .up-random {
-        width: 50px; /* Tamaño reducido */
-        height: 50px; /* Tamaño reducido */
-        margin-left: auto; /* Centra el botón */
-        margin-right: auto; /* Centra el botón */
-        margin-top: 100px; /* Reduce el margen superior */
-        font-size: 24px; /* Tamaño de fuente reducido */
-        padding-left: 15px; /* Reduce el padding */
+        width: 50px; 
+        height: 50px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: 100px; 
+        font-size: 24px; 
+        padding-left: 15px; 
     }
 
     .h1-random {
-        font-size: 24px; /* Tamaño de fuente reducido */
-        margin-left: 0; /* Elimina el margen izquierdo */
-        text-align: center; /* Centra el texto */
+        font-size: 24px; 
+        margin-left: 0; 
+        text-align: center; 
     }
 
     .texto-random-uno,
     .texto-random-dos {
-        font-size: 16px; /* Tamaño de fuente reducido */
-        margin-left: 0; /* Elimina el margen izquierdo */
-        text-align: center; /* Centra el texto */
+        font-size: 16px; 
+        margin-left: 0; 
+        text-align: center; 
     }
 
     .link-random {
-        margin-left: 0; /* Elimina el margen izquierdo */
-        text-align: center; /* Centra el enlace */
-        display: block; /* Asegura que se muestre en una nueva línea */
-        margin-top: 10px; /* Añade un margen superior */
+        margin-left: 0;
+        text-align: center;
+        display: block; 
+        margin-top: 10px; 
     }
 }

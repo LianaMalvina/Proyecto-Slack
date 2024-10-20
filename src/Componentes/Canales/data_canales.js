@@ -34,20 +34,20 @@ export const canales_data_inicial = [
 ];
 
 const obtenerNuevoCanal = () => {
-    let nuevoscanales = localStorage.getItem('nuevoscanales');
+    let nuevoscanales = localStorage.getItem('nuevoscanales')
     if (nuevoscanales) {
-        return JSON.parse(nuevoscanales);
+        return JSON.parse(nuevoscanales)
     } else {
-        localStorage.setItem('nuevoscanales', JSON.stringify(canales_data_inicial));
-        return canales_data_inicial;
+        localStorage.setItem('nuevoscanales', JSON.stringify(canales_data_inicial))
+        return canales_data_inicial
     }
 };
 
 const crearNuevosCanales = (nuevoCanal) => {
-    nuevoCanal.id = uuidv4();
-    let nuevoscanales = obtenerNuevoCanal();
-    nuevoscanales.push(nuevoCanal);
-    localStorage.setItem('nuevoscanales', JSON.stringify(nuevoscanales));
+    nuevoCanal.id = uuidv4()
+    let nuevoscanales = obtenerNuevoCanal()
+    nuevoscanales.push(nuevoCanal)
+    localStorage.setItem('nuevoscanales', JSON.stringify(nuevoscanales))
 };
 
-export { obtenerNuevoCanal, crearNuevosCanales };
+export { obtenerNuevoCanal, crearNuevosCanales }

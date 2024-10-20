@@ -7,16 +7,16 @@ const PaginaInicio = () => {
     const [menuVisible, setMenuVisible] = useState(false)
 
     const toggleMenu = () => {
-        setMenuVisible(!menuVisible);
+        setMenuVisible(!menuVisible)
     }
 
     useEffect(() => {
-        const menuToggle = document.getElementById('menu-toggle');
-        const menuList = document.getElementById('menu-list');
+        const menuToggle = document.getElementById('menu-toggle')
+        const menuList = document.getElementById('menu-list')
 
        
 
-        return () => {};
+        return () => {}
     }, [])
 
     return (
