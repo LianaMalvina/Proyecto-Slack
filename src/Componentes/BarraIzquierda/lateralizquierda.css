@@ -7,9 +7,11 @@
 .contenedor-lateral{
     display: flex;
     flex-direction: column;
+    align-content: center;
     align-items: center;
     width: 70px;
     background-color: #400b41;
+
     
 }
 .contenedor-menu-lateral{
@@ -22,13 +24,14 @@
 .contenedor-nombre-menu-lateral{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     max-width: 50px;
     height: 15px;
     border-radius: 10px;    
-    color:antiquewhite;
-    font-size: 11px;
+    color:#ffff;
+    font-size: 9px;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    text-align: center;
     
    
 }
@@ -42,6 +45,6 @@
     height: 40px;
     border-radius: 10px;
     font-size: 25px;
-    color:antiquewhite
+    color:#ffff;
     
 }

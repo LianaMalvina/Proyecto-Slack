@@ -8,7 +8,7 @@
 .div{
     display: flex;
     flex-direction: row;
-  margin-top: 3px;
+  margin-top: 2px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,15 +16,17 @@
 .lateral-app{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-between;
     background-color:#400b41;
     width: 70px;
+    margin-top: 0;
 }
 
 .centro{
     justify-content: center;
     display: flex;
     flex-direction: row;
+    border-radius: 10px;
     
    
 }
@@ -40,11 +42,13 @@
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    background-color: aliceblue;
+    background-color: #ffff;
     color: black;
     width: 940px;
+    border-radius: 10px;
 }
 .chat-ppal{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }

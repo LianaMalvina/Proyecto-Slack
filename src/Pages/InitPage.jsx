@@ -12,7 +12,7 @@ const InitPage = () => {
     <div className='logo'>
       <NavbarLogo/>
     </div>
-    <div><PaginaInicio/></div>
+    <div className='app-pagina-inicio'><PaginaInicio/></div>
     
     </nav>
     <main>

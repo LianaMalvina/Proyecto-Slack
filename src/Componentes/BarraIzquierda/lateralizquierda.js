@@ -2,51 +2,48 @@
 
 
 export const lateral_izq = [
-    {
-        id: 1,
-        icon:'UP',
-    },
+    
     {
         nombre:'Inicio',
         icon: 'HOME',
-        id: 2
+        id: 1
     },
     {
-        id: 3,
+        id: 2,
         nombre:'Mensajes directos',
         icon: 'CHAT'
     },
     {
-        id: 4,
+        id: 3,
         nombre:'Actividad',
         icon: 'BELL'
     },
     {
-        id: 5,
+        id: 4,
         nombre:'Mas tarde',
         icon: 'CINTA'
     },
     {
-        id: 6,
+        id: 5,
         nombre:'Automatizaciones',
         icon: 'PLAY'
     },
    {
-        id: 7,
+        id: 6,
         icon: 'POINTS'
     },
     
     {
-        id: 8,
+        id: 7,
         nombre:'Más',
     },
     {
-        id: 9,
+        id: 8,
         icon: 'PLUS',
       
     },
     {
-        id: 10,
+        id: 9,
         icon: 'HUMAN',
     }
 ]

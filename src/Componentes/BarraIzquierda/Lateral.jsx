@@ -9,7 +9,9 @@ const Lateral = (props) => {
         
 
         return (
+          
             <>
+            
                 <div key={lateral.id} className='contenedor-lateral'>
                    
                     <div className='contenedor-menu-lateral'>

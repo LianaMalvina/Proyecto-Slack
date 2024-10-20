@@ -12,7 +12,8 @@ const ChatList = (props) => {
 
         <div className='chat'>
           <li className='chat-li'>
-            <ChatItem key={chat.id} fecha={chat.fecha} image={chat.image} nombre={chat.nombre} mensaje={chat.mensaje} /></li>
+            <ChatItem key={chat.id} fecha={chat.fecha} image={chat.image} nombre={chat.nombre} mensaje={chat.mensaje} />
+          </li>
         </div>
     )
   })
@@ -25,7 +26,7 @@ const ChatList = (props) => {
       </div>
       <div className='enviar-mensaje'>
         <EnviarMensaje />
-      </div>console.log({'chat.image'})
+      </div>
     </>
   )
 }

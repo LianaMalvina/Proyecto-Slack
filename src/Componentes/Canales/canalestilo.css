@@ -4,40 +4,21 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans',Verdana, sans-serif;
 }
-.contenedor-canales{
+.canales-home{
     display: flex;
-    flex-direction: column;
-    
+    width:100% ;
+   flex-direction: column;
+   gap:-20px;
+   align-items: flex-start;
+   text-align: start;
+   padding: 0;
+   color: #ffff;
+   margin-left: 10px;
 
 }
-.canales-hashtag{
+.contenedor-otros-items{
+    color: #ffff;
     display: flex;
-    flex-direction: row;
-    background-color: #744676;
-    font-size: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    justify-content: space-between;
-    margin-top: 20px;
+    width: 100%;
+    margin-left: 10px;
 }
-.canales-titulo{
-    background-color: #744676;
-    font-size: 17px;
-    border: none;
-    color: antiquewhite;
-}
-.canales-text{
-    background-color: #744676;
-    font-size: 17px;
-    border: none;
-    color: antiquewhite;
-    margin-left: 18px;
-    margin-top: 10px;
-}
-.canales-icons{
-    background-color: #744676;
-    border:none;
-    color: antiquewhite;
-}
-
-

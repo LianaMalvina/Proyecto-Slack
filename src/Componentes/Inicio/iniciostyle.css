@@ -78,7 +78,7 @@ border-top: none;
 }
 
 .menu-list li {
-    margin-right: 20px; /* Espaciado entre botones */
+    margin-right: 20px; 
 }
 
 @media (max-width: 320px) {
@@ -93,7 +93,7 @@ border-top: none;
 
 
     .menu-toggle {
-        display: block; /* Muestra el botón en pantallas pequeñas */
+        display: block;
     }
     
     .menu-list {

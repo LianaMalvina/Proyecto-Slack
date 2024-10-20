@@ -13,22 +13,24 @@ const Canales = () => {
      
         return(
             <>
+            <div className='canales-home'>
             <h2>UTN PWI TM LUN-MIE</h2>
             <h3>Hilos de conversación</h3>
             <h4>Borradores y enviados</h4>
             <h4>Canales</h4>
+            </div>
             {
               espaciosnuevos.map((espacionuevo)=>{
                
                 return(
                   <div key={espacionuevo.id}>
-                    <Link><h3># {espacionuevo.titulo}</h3></Link>
-                                     
+                    <Link style={{textDecoration:'none'}}><h3 style={{color:'#ffff', fontSize:'16px',
+                      marginLeft:'30px'}} ># {espacionuevo.titulo}</h3></Link>              
                   </div>
                 )
               })
             }
-            <div className=''>
+            <div className='contenedor-otros-items'>
                 <div className=''>
                 <p>Mensajes directos</p>
                 <p>Liana Kachuk</p>

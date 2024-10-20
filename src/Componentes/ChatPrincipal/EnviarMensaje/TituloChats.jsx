@@ -36,16 +36,16 @@ export const IconosDerechos = () => {
             </div>
             <div className="contenedor-btn-chats">
                 <div className="children-chat">
-                   <span>< RiChat1Fill/></span> <button className="btn-children"> Mensajes</button>
+                  <div><span>< RiChat1Fill/></span> <button className="btn-children"> Mensajes</button></div> 
                 </div>
                 <div className="children-chat">
-              <span><GrDocumentVerified /></span><button className="btn-children">Añadir canvas</button>
+              <div><span><GrDocumentVerified /></span><button className="btn-children">Añadir canvas</button></div>
                 </div>
                 <div className="children-chat">
-                <span><GrMultiple /></span><button className="btn-children">Archivos</button>
+                <div><span><GrMultiple /></span><button className="btn-children">Archivos</button></div>
                 </div>
                 <div className="children-chat">
-                <button className="btn-children"><GrAdd /></button>
+                <div><button className="btn-children"><GrAdd /></button></div>
                 </div>
             </div>
         </div>
