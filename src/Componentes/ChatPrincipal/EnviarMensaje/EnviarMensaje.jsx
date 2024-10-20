@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useState } from 'react'
 import './enviarmsj.css'
 import { MdFoggy, MdFormatListNumbered } from "react-icons/md";
 import { FiList, FiAlignLeft } from "react-icons/fi";
@@ -11,22 +12,23 @@ import { RxFontItalic } from "react-icons/rx";
 import { TbLetterCase, TbUserEdit } from "react-icons/tb";
 import { VscMic, VscSmiley, VscMention, VscDiffIgnored, VscAdd, VscChevronDown, VscSend } from "react-icons/vsc";
 import { IoVideocamOutline } from "react-icons/io5";
+import ChatItem from '../ChatItem';
 
-const EnviarMensaje = () => {
+const EnviarMensaje = ({ agregarMensaje}) => {
+    const [error, setError] = useState({ text: '', isError: false });
+    const [mensaje, setMensaje] = useState('');
 
-    const [error, setError] = useState({ text: '', isError: false })
     const handleSubmitMessage = (evento) => {
-        evento.preventDefault()
+        evento.preventDefault();
 
-        const formulario = new FormData(evento.target)
-        const mensaje = formulario.get('mensaje')
         if (!mensaje) {
-            setError({ isError: true, text: 'No has escrito nada' })
+            setError({ isError: true, text: 'No has escrito nada' });
+        } else {
+            agregarMensaje(mensaje); // Llama a la función para agregar el mensaje
+            setMensaje(''); // Limpia el campo de entrada
+            setError({ text: '', isError: false });
         }
-        else {
-            setError({ text: '', isError: false })
-        }
-    }
+    };
 
     return (
         <>
@@ -65,7 +67,8 @@ const EnviarMensaje = () => {
 
                 <div className='form-enviar-msj'>
                     <form onSubmit={handleSubmitMessage}>
-                        <input placeholder='Enviar un mensaje a #consultas' name='mensaje' />
+                        <input placeholder='Enviar un mensaje a #consultas' name='mensaje' value={mensaje}
+                          onChange={(e) => setMensaje(e.target.value)}/>
                         {error.isError && <span>{error.text}</span>}
                         <div className='form-btn-icons'>
                             <div className='form-icons'>
@@ -78,8 +81,9 @@ const EnviarMensaje = () => {
                                 <button className='form-icon-class'><VscDiffIgnored /></button>
                             </div>
                             <div className='form-btn'>
-                                <button className='form-icon-class-right'><VscSend /></button>
+                                <button type='submit' className='form-icon-class-right'><VscSend /></button>
                                 <button className='form-icon-class-right'><VscChevronDown /></button>
+                              
                             </div>
                         </div>
                     </form>

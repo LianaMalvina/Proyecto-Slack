@@ -1,15 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import EnviarMensaje from './EnviarMensaje/EnviarMensaje'
 import ChatItem from './ChatItem'
 import './chatstilo.css'
 
 
 
-const ChatList = (props) => {
 
-  const ChatJSX = props.chats.map((chat) => {
+const ChatList = ({ chats, agregarMensaje }) => {
+  const ChatJSX = chats.map((chat) => {
     return (    
-
         <div className='chat'>
           <li className='chat-li'>
             <ChatItem key={chat.id} fecha={chat.fecha} image={chat.image} nombre={chat.nombre} mensaje={chat.mensaje} />
@@ -18,19 +17,16 @@ const ChatList = (props) => {
     )
   })
 
-
   return (
     <>
       <div>
         {ChatJSX}
       </div>
       <div className='enviar-mensaje'>
-        <EnviarMensaje />
+        <EnviarMensaje agregarMensaje={agregarMensaje}/>
       </div>
     </>
   )
 }
-
-
 
 export default ChatList

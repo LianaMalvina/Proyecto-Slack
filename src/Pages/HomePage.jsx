@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../homepage.css'
 import Navegador from '../Componentes/NavBar/Navegador'
 import { Lateral } from '../Componentes/BarraIzquierda/Lateral'
@@ -6,14 +6,28 @@ import { lateral_izq } from '../Componentes/BarraIzquierda/lateralizquierda'
 import Canales from '../Componentes/Canales/Canales'
 import { canales_data_inicial } from '../Componentes/Canales/data_canales'
 import ChatList from '../Componentes/ChatPrincipal/ChatList'
-import { chats } from '../Componentes/ChatPrincipal/chat_data'
+import { pantallaChat } from '../Componentes/ChatPrincipal/chat_data'
 import { IconosDerechos } from '../Componentes/ChatPrincipal/EnviarMensaje/titulochats'
+import EnviarMensaje from '../Componentes/ChatPrincipal/EnviarMensaje/EnviarMensaje'
 
 
 const HomePage = () => {
+
+  const [chats, setChats] = useState([])
+
+  const agregarMensaje = (mensaje) => {
+      const nuevoChat = {
+          id: chats.length + 1, 
+          fecha: new Date().toLocaleString(), 
+          image: '', 
+          nombre: 'Usuario', 
+          mensaje: mensaje, 
+      };
+      setChats([...chats, nuevoChat]); 
+  };
   return (
     <>
-      <Navegador />
+      <Navegador className="navegador-home-page"/>
       <div className='div'>
         <div className='lateral-app'>
           <span style={{
@@ -36,7 +50,8 @@ const HomePage = () => {
             <div className='chat-ppal'>
               <IconosDerechos className='' />
             </div>
-            <ChatList chats={chats} />
+            <ChatList chats={chats} agregarMensaje={agregarMensaje}/>
+             
           </div>
         </div>
       </div>
@@ -45,3 +60,19 @@ const HomePage = () => {
 }
 
 export default HomePage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -124,3 +124,23 @@ input::-webkit-input-placeholder {
 .vacio-dos {
     width: 270px;
 }
+
+
+    @media (max-width: 320px) {
+        .header{
+            display: none;
+            overflow: hidden;
+            visibility: none;
+            background-color: #400b41;
+            padding: 0;
+            margin: 0;
+        }
+         .clock, .interno-buscador, .buscador-icon, .pregunta-icon{
+            display: none;
+            background-color: #400b41;
+            overflow: hidden;
+            visibility: none;
+            color: #400b41;
+        }
+  
+}

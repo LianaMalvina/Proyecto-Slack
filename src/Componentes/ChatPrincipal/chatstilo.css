@@ -5,6 +5,7 @@
     background-color: #ffff;
     justify-content: space-between;
     height: auto;
+   
 
 }
 h2{
@@ -96,8 +97,10 @@ h2{
     flex-direction: column;
     position: relative;
     margin-top: 8px;
-    border-bottom: solid 1px gray;
+    border-bottom: solid 1px rgb(197, 193, 193);
     gap:20px;
+  
+    
 }
 .fecha-chat{
     border: solid 1px gray;
@@ -107,6 +110,7 @@ h2{
     position: absolute;
     left: 40%;
     top:-6px;
+    
 }
 
 .chat-li{
@@ -115,11 +119,13 @@ h2{
     display: flex;
     gap:10px;
     margin-top: -10px;
+    
 }
 
 .img-chatitem{
     width: 45px;
     border-radius: 12px;
+    height: 45px;
 
 }  
   
@@ -134,4 +140,17 @@ h2{
 }
 .enviar-mensaje{
     width: 100%;
+}
+
+@media (max-width: 320px) {
+    .primer-contact-titulo{
+        font-size: 10px;
+    } .titulo-consultas{
+        font-size: 16px;
+    }
+    .image-contact{
+width: 14px;
+    }
+}.mensaje-chat-stilo{
+    font-size: 12px;
 }

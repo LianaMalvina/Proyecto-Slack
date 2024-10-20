@@ -3,6 +3,7 @@ import { FaEllipsisVertical } from "react-icons/fa6";
 import '../chatstilo.css'
 import { GrAdd, GrMultiple, GrDocumentVerified } from "react-icons/gr";
 import { RiChat1Fill } from "react-icons/ri";
+import { pantallaChat } from "../chat_data";
 
 export const IconosDerechos = () => {
 
@@ -12,7 +13,7 @@ export const IconosDerechos = () => {
             <div className="contenedor-chat-hijo">
                 <div className='primer-titulo'>
                     <div className='primer-contact-titulo'>
-                        <h2>
+                        <h2 className="titulo-consultas">
                             #consultas
                         </h2>
                     </div>
@@ -36,18 +37,35 @@ export const IconosDerechos = () => {
             </div>
             <div className="contenedor-btn-chats">
                 <div className="children-chat">
-                  <div><span>< RiChat1Fill/></span> <button className="btn-children"> Mensajes</button></div> 
+                    <div><span>< RiChat1Fill /></span> <button className="btn-children"> Mensajes</button></div>
                 </div>
                 <div className="children-chat">
-              <div><span><GrDocumentVerified /></span><button className="btn-children">Añadir canvas</button></div>
+                    <div><span><GrDocumentVerified /></span><button className="btn-children">Añadir canvas</button></div>
                 </div>
                 <div className="children-chat">
-                <div><span><GrMultiple /></span><button className="btn-children">Archivos</button></div>
+                    <div><span><GrMultiple /></span><button className="btn-children">Archivos</button></div>
                 </div>
                 <div className="children-chat">
-                <div><button className="btn-children"><GrAdd /></button></div>
+                    <div><button className="btn-children"><GrAdd /></button></div>
                 </div>
             </div>
+            <div className="chat">
+                {pantallaChat.map((chat) => (
+                    <>
+                        <div key={chat.id}>
+                            <small className="">{chat.fecha}</small>
+                        </div>
+                        <div className="chat-li">
+                            <img src={chat.image} alt={chat.nombre} className="img-chatitem" />
+                            <div className="toyrepodrida">
+                                <h4 className="props-nombre">{chat.nombre}</h4>
+                                <p className="mensaje-chat-stilo">{chat.mensaje}</p>
+                            </div>
+                        </div>
+                    </>
+                ))}
+            </div>
         </div>
+
     )
 }

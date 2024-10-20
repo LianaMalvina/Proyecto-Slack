@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    flex-direction: column;
 }
 
 .contenedor-random{
@@ -16,7 +17,26 @@
     align-items: center;
     margin-left: 20%;
 }
+.cargando {
+    position: absolute;
+    font-size: 18px;
+    color:#ffff;
+    animation: girar 3s linear forwards;
+    left:630px;
+    top:200px;
+    background-color: rgb(161, 70, 131);
+    border-radius: 100px;
+    height: 100px;
+    align-content: center;
+    box-shadow: 0 0 10px 2px gray;
+       
+}
 
+@keyframes girar {
+    0% { transform: rotate(0deg); opacity: 1; }
+    50% { transform: rotate(180deg); opacity: 1; }
+    100% { transform: rotate(360deg); opacity: 0; }
+}
 
 .imagen-random{
 
@@ -58,6 +78,9 @@
 
 /* Media Query para pantallas de 320px */
 @media (max-width: 320px) {
+    .cargando{
+        display: none;
+    }
     .contenedor-padre {
         padding: 10px; /* Añade un poco de padding */
     }

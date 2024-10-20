@@ -38,6 +38,7 @@
     color: #a5a1a1;
     background-color: #f8f8f8;
     gap: 15px;
+    border: none;
 }
 form{
     
@@ -53,7 +54,7 @@ input{
     background-color: #ffff;
     font-size: 15px;
     font-weight: 100;
-    color: rgb(204, 202, 202);
+    color: rgb(39, 38, 38);
     margin-left: 5px;
 }
 .form-enviar-msj{
@@ -82,11 +83,51 @@ input{
     color: rgb(165, 157, 157);
     font-size: 21px;
     background-color: #ffff;   
+    border: none;
 }
 .form-icon-class-right
 {
     color: rgb(121, 111, 111);
     font-size: 21px;
     background-color: #ffff;   
+    border: none;
+}
+.form-icon-class-right:hover{
+      background-color: green;
+      color: aliceblue;
+      font-weight: 700;
+}
+input{
+    border:none;
+    color: #000;
+}
+.input:hover{
+    border: none;
+}
+input:focus {
+    border: solid 1px #ccc6c6; 
+    outline: none;
+}
+input::placeholder{
+    color: #a5a1a1;
+}
 
+@media (max-width:320px) {
+ .contenedor-form-msj{
+    width: 99%; margin-left: 0;}
+    .botones-msj-nav{
+
+    font-size: 14px;
+
+ }   .contenedor-nav-msj{
+    width: 93%;
+    gap: 1px;
+ }
+ .form-enviar-msj{
+width: 95%;
+ } .form-btn-icons, .form-icons{
+    width: 95%;
+ }.form-icon-class{
+    font-size: 12px;
+ }
 }
