@@ -6,9 +6,10 @@ import { lateral_izq } from '../Componentes/BarraIzquierda/lateralizquierda'
 import Canales from '../Componentes/Canales/Canales'
 import { canales_data_inicial } from '../Componentes/Canales/data_canales'
 import ChatList from '../Componentes/ChatPrincipal/ChatList'
-import { pantallaChat } from '../Componentes/ChatPrincipal/chat_data'
+
 import { IconosDerechos } from '../Componentes/ChatPrincipal/EnviarMensaje/titulochats'
-import EnviarMensaje from '../Componentes/ChatPrincipal/EnviarMensaje/EnviarMensaje'
+
+import Main from '../Componentes/Inicio/Main/Main'
 
 
 const HomePage = () => {
@@ -26,7 +27,10 @@ const HomePage = () => {
       setChats([...chats, nuevoChat])
   }
   return (
+    
     <>
+    
+       <Main className='main-ppal'/>
       <Navegador className="navegador-home-page"/>
       <div className='div'>
         <div className='lateral-app'>

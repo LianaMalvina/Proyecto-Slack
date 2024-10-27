@@ -5,8 +5,7 @@ import InitPage from './Pages/InitPage'
 import Random from './Componentes/RandomRedireccion/Random'
 import CrearNuevoCanal from './Componentes/Canales/CrearNuevoCanal'
 import Canales from './Componentes/Canales/Canales'
-import ChatItem from './Componentes/ChatPrincipal/ChatItem'
-import ChatList from './Componentes/ChatPrincipal/ChatList'
+
 
 
 function App() {
@@ -19,10 +18,11 @@ function App() {
       <Route path='/inicio/home' element={<HomePage/>}/>
       <Route path='/home' element={<HomePage/>}/>
       <Route path='/random' element={<Random/>}/>
+      <Route path='/random/home' element={<HomePage/>} />
       <Route path='/new' element={<CrearNuevoCanal/>}/>
       <Route path='/inicio/new' element={<CrearNuevoCanal/>}/>
-      <Route path="/canales" element={<Canales/>} />
-      <Route path="/new/home" element={<HomePage/>}/>  
+      <Route path='/canales' element={<Canales/>} />
+      <Route path='/new/home' element={<HomePage/>}/>  
     </Routes>
       
     </>

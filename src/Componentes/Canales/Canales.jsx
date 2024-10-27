@@ -1,6 +1,6 @@
 import React from 'react'
 import './canalestilo.css'
-import { ICONS_CANALES } from './iconos-canales'
+
 import { obtenerNuevoCanal } from './data_canales'
 import { Link } from 'react-router-dom'
 

@@ -3,6 +3,7 @@ import { GoChevronDown } from "react-icons/go"
 import { GoX } from "react-icons/go"
 import './iniciostyle.css'
 
+
 const PaginaInicio = () => {
     const [menuVisible, setMenuVisible] = useState(false)
 
@@ -23,8 +24,9 @@ const PaginaInicio = () => {
         <>
             <header className='header'>
                 <nav className='nav-menu'>
+                <img src='https://a.slack-edge.com/3d92b39/marketing/img/nav/slack-salesforce-logo-nav-white.png'></img>
                     <button className='menu-toggle' id='menu-toggle' onClick={toggleMenu}>
-                        {menuVisible ? <GoX /> : '☰ Menú'}
+                        {menuVisible ? <GoX /> : '☰'}
                     </button>
                     <ul className={`menu-list ${menuVisible ? 'show' : ''}`} id='menu-list'>
                         <li>
@@ -47,11 +49,11 @@ const PaginaInicio = () => {
                             <button className='btn-navegador-inicio'>Precios</button>
                         </li>
                     </ul>
-                </nav>
+                
                 <div className='botones-ventas'>
                     <button className='ventas'>HABLAR CON VENTAS</button>
                     <button className='ventas-dos'>CREAR UN NUEVO ESPACIO DE TRABAJO</button>
-                </div>
+                </div></nav>
             </header>
         </>
     );
